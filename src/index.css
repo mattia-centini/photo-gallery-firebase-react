@@ -30,6 +30,11 @@ body{
 }
 
 /* upload form styles */
+.progress-bar{
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
 
 
 /* progress bar styles */

@@ -1,8 +1,8 @@
-import * as firebase from 'firebase/app'
+import firebase from 'firebase/app'
 import 'firebase/storage'
 import 'firebase/firestore'
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBJzCM4HvSmrY3N5gnYAUQolhupEgDp_ao",
     authDomain: "photo-gallery-d992d.firebaseapp.com",
     projectId: "photo-gallery-d992d",
@@ -16,4 +16,4 @@ var firebaseConfig = {
   const projectStorage = firebase.storage()
   const projectFirestore = firebase.firestore()
 
-  export {projectStorage, projectFirestore}
+  export { firebase , projectStorage, projectFirestore }
