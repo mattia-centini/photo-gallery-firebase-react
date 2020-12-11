@@ -5,7 +5,7 @@ const useFirestore = (collection) => {
     const [docs, setDocs] = useState([]);
 
     useEffect(() => {
-       const unsub = projectFirestore.collection(collection)
+       const unsub = projectFirestore.collection('images')
         .orderBy('createdAt', 'desc')
         //onSnapshot fires a callback everytime a change accour inside this collection and once initially
         .onSnapshot((snap) => {
@@ -21,3 +21,5 @@ const useFirestore = (collection) => {
 
     return {docs}
 }
+
+export default useFirestore
